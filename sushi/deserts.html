@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>sushi KOI</title>
+
+    <!--fonts awesome stars-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--fonts awesome ends-->
+
+    <!-- favicon-->
+    <!-- <link rel="icon" type="image/png" sizes="50x50" href="favicon.png">
+<link rel="manifest" href="favicon.png">
+<link rel="mask-icon" href="favicon.png" > -->
+    <!--favicon -->
+
+</head>
+
+<body>
+    <!-- header секция начало -->
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">Sushi KOI</a>
+
+            <nav class="navbar">
+                <a href="rolls.html">Роллы</a>
+                <a href="pizza.html">Пицца</a>
+                <a href="drinks.html">Напитки</a>
+                <a href="deserts.html">Десерты</a>
+                <a href="sousses.html">Соусы</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+        </section>
+    </header>
+    <!-- header секция конец -->
+
+  <!-- авторизация и регистрация пользователя -->
+  <div class="user-account">
+    <section>
+        <div id="close-account"><span>Закрыть</span></div>
+
+        <div class="user">
+            <p><span>Вы не авторизованы в данный момент</span></p>
+        </div>
+
+        <div class="display-orders">
+            <p>Ацуи <span>(350₽/ х 1)</span> </p>
+            <p>Филадельфия в темпуре <span>(840₽/ х 2)</span> </p>
+            <p>Эби чиз <span>(900₽/ х 3)</span> </p>
+            <p>Амай <span>(1400₽/ х 4)</span> </p>
+        </div>
+
+        <!-- поля регистрации начало -->
+        <div class="flex">
+
+            <form action="" method="post">
+                <h3>Войти в личный кабинет</h3>
+                <input type="email" name="email" required class="box" placeholder="введите email" maxlength="50">
+                <input type="password" name="pass" required class="box" placeholder="введите пароль" maxlength="20">
+                <input type="submit" value="войти" name="login" class="btn-btn">
+            </form>
+
+            <form action="" method="post">
+                <h3>Зарегистрироваться в личном кабинете</h3>
+                <input type="text" name="name" required class="box" placeholder="введите ваше имя" maxlength="20">
+                <input type="text" name="name" required class="box" placeholder="введите вашу фамилию"
+                    maxlength="20">
+                <input type="email" name="email" required class="box" placeholder="введите email" maxlength="50">
+                <input type="password" name="pass" required class="box" placeholder="введите пароль" maxlength="20">
+                <input type="password" name="pass" required class="box" placeholder="повторите пароль"
+                    maxlength="20">
+                <input type="submit" value="зарегистрироваться" name="" class="btn-btn">
+            </form>
+
+        </div>
+        <!-- поля регистрации конец -->
+    </section>
+</div>
+
+<!-- офрмление заказа начало -->
+<div class="my-orders">
+
+    <section>
+
+        <div id="close-orders"><span>Закрыть</span></div>
+
+        <h3 class="title"> Мои заказы </h3>
+
+        <div class="box">
+            <p>Дата заказа: <span>26/05/2022</span> </p>
+            <p>Имя: <span>Дарья Данилова</span> </p>
+            <p>Номер телефона : <span>1234567890</span></p>
+            <p>Адрес : <span>ул Октябрьская 25 подъезд №3</span></p>
+            <p>Способ оплаты : <span>Оплата при доставке</span></p>
+            <p>Ваш заказ : <span> Ацуи (350₽/ х 1), Филадельфия в темпуре (840₽/ х 2),Эби чиз (900₽/ х
+                    3),Амай(1400₽/ х 4)</span></p>
+            <p>Количество персон : <span>5</span></p>
+            <p>К оплате : <span>3490₽</span></p>
+            <p>Статус платежа : <span style="color: var(--orange);">в ожидании</span> </p>
+        </div>
+
+        <div class="box">
+            <p>Дата заказа: <span>26/05/2022</span> </p>
+            <p>Имя: <span>Дарья Данилова</span> </p>
+            <p>Номер телефона : <span>1234567890</span></p>
+            <p>Адрес : <span>ул Октябрьская 25 подъезд №3</span></p>
+            <p>Способ оплаты : <span>Оплата при доставке</span></p>
+            <p>Ваш заказ : <span> Ацуи (350₽/ х 1), Филадельфия в темпуре (840₽/ х 2),Эби чиз (900₽/ х
+                    3),Амай(1400₽/ х 4)</span></p>
+            <p>Количество персон : <span>5</span></p>
+            <p>К оплате : <span>3490₽</span></p>
+            <p>Статус платежа : <span style="color: var(--orange);">в ожидании</span> </p>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- корзина товаров -->
+<div class="shopping-cart">
+
+    <section>
+
+        <div id="close-cart"><span>Закрыть</span></div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="img/pizza-1.jpg" alt="">
+            <div class="content">
+                <p>Ацуи <span>(350₽/ х 1)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="img/pizza-3.jpg" alt="">
+            <div class="content">
+                <p>Филадельфия в темпуре <span>(840₽/ х 2)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="img/pizza-6.jpg" alt="">
+            <div class="content">
+                <p>Эби чиз <span>(900₽/ х 3)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="img/pizza-7.jpg" alt="">
+            <div class="content">
+                <p>Амай <span>(1400₽/ х 4)</span> </p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <a href="#order" class="btn-btn">Оформить заказ</a>
+
+    </section>
+
+</div>
+    <footer>
+
+    </footer>
+    <!-- java-script подключение -->
+    <script src="js/header.js"></script>
+</body>
+
+</html>
